@@ -8,3 +8,4 @@
 .settings
 **/a.out
 **/*.npy
+**/martini_openmm/

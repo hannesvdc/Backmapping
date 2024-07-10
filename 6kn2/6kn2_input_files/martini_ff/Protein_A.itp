@@ -1,0 +1,118 @@
+; MARTINI (martini22) Coarse Grained topology file for "Protein_A"
+; Created by py version 2.6_3 
+; Using the following options:  -f 6kn2_clean.pdb -o sinle-6kn2.top -x 6kn2_cg.pdb -dssp /usr/bin/dssp -p backbone -ff martini22
+; Sequence:
+; GFRSPCPPFC
+; Secondary Structure:
+; CCCCSTTTCC
+
+[ moleculetype ]
+; Name         Exclusions
+Protein_A         1
+
+[ atoms ]
+    1    Qd     1   GLY    BB     1  1.0000 ; C
+    2    P5     2   PHE    BB     2  0.0000 ; C
+    3   SC5     2   PHE   SC1     3  0.0000 ; C
+    4   SC5     2   PHE   SC2     4  0.0000 ; C
+    5   SC5     2   PHE   SC3     5  0.0000 ; C
+    6    P5     3   ARG    BB     6  0.0000 ; C
+    7    N0     3   ARG   SC1     7  0.0000 ; C
+    8    Qd     3   ARG   SC2     8  1.0000 ; C
+    9    P5     4   SER    BB     9  0.0000 ; C
+   10    P1     4   SER   SC1    10  0.0000 ; C
+   11    P4     5   PRO    BB    11  0.0000 ; S
+   12    C3     5   PRO   SC1    12  0.0000 ; S
+   13   Nda     6   CYS    BB    13  0.0000 ; T
+   14    C5     6   CYS   SC1    14  0.0000 ; T
+   15    N0     7   PRO    BB    15  0.0000 ; T
+   16    C3     7   PRO   SC1    16  0.0000 ; T
+   17    N0     8   PRO    BB    17  0.0000 ; T
+   18    C3     8   PRO   SC1    18  0.0000 ; T
+   19    P5     9   PHE    BB    19  0.0000 ; C
+   20   SC5     9   PHE   SC1    20  0.0000 ; C
+   21   SC5     9   PHE   SC2    21  0.0000 ; C
+   22   SC5     9   PHE   SC3    22  0.0000 ; C
+   23    Qa    10   CYS    BB    23 -1.0000 ; C
+   24    C5    10   CYS   SC1    24  0.0000 ; C
+
+[ bonds ]
+; Backbone bonds
+    1     2      1   0.35000  1250 ; GLY(C)-PHE(C)
+    2     6      1   0.35000  1250 ; PHE(C)-ARG(C)
+    6     9      1   0.35000  1250 ; ARG(C)-SER(C)
+    9    11      1   0.35000  1250 ; SER(C)-PRO(S)
+   11    13      1   0.35000  1250 ; PRO(S)-CYS(T)
+   13    15      1   0.35000  1250 ; CYS(T)-PRO(T)
+   15    17      1   0.35000  1250 ; PRO(T)-PRO(T)
+   17    19      1   0.35000  1250 ; PRO(T)-PHE(C)
+   19    23      1   0.35000  1250 ; PHE(C)-CYS(C)
+; Sidechain bonds
+    2     3      1   0.31000  7500 ; PHE
+    6     7      1   0.33000  5000 ; ARG
+    7     8      1   0.34000  5000 ; ARG
+    9    10      1   0.25000  7500 ; SER
+   11    12      1   0.30000  7500 ; PRO
+   13    14      1   0.31000  7500 ; CYS
+   15    16      1   0.30000  7500 ; PRO
+   17    18      1   0.30000  7500 ; PRO
+   19    20      1   0.31000  7500 ; PHE
+   23    24      1   0.31000  7500 ; CYS
+
+[ constraints ]
+    3     4      1   0.27000 ; PHE
+    3     5      1   0.27000 ; PHE
+    4     5      1   0.27000 ; PHE
+   20    21      1   0.27000 ; PHE
+   20    22      1   0.27000 ; PHE
+   21    22      1   0.27000 ; PHE
+
+[ angles ]
+; Backbone angles
+    1     2     6      2    127    20 ; GLY(C)-PHE(C)-ARG(C)
+    2     6     9      2    127    20 ; PHE(C)-ARG(C)-SER(C)
+    6     9    11      2    127    20 ; ARG(C)-SER(C)-PRO(S)
+    9    11    13      2    100    20 ; SER(C)-PRO(S)-CYS(T)
+   11    13    15      2    100    20 ; PRO(S)-CYS(T)-PRO(T)
+   13    15    17      2    100    20 ; CYS(T)-PRO(T)-PRO(T)
+   15    17    19      2    127    20 ; PRO(T)-PRO(T)-PHE(C)
+   17    19    23      2    127    20 ; PRO(T)-PHE(C)-CYS(C)
+; Backbone-sidechain angles
+    1     2     3      2    100    25 ; GLY(C)-PHE(C) SBB
+    2     6     7      2    100    25 ; PHE(C)-ARG(C) SBB
+    6     9    10      2    100    25 ; ARG(C)-SER(C) SBB
+    9    11    12      2    100    25 ; SER(C)-PRO(S) SBB
+   11    13    14      2    100    25 ; PRO(S)-CYS(T) SBB
+   13    15    16      2    100    25 ; CYS(T)-PRO(T) SBB
+   15    17    18      2    100    25 ; PRO(T)-PRO(T) SBB
+   17    19    20      2    100    25 ; PRO(T)-PHE(C) SBB
+   19    23    24      2    100    25 ; PHE(C)-CYS(C) SBB
+; Sidechain angles
+    2     3     4      2    150    50 ; PHE
+    2     3     5      2    150    50 ; PHE
+    6     7     8      2    180    25 ; ARG
+   19    20    21      2    150    50 ; PHE
+   19    20    22      2    150    50 ; PHE
+
+[ dihedrals ]
+; Backbone dihedrals
+; Sidechain improper dihedrals
+    2     4     5     3      2      0    50 ; PHE
+   19    21    22    20      2      0    50 ; PHE
+
+#ifdef POSRES
+#ifndef POSRES_FC
+#define POSRES_FC 1000.00
+#endif
+ [ position_restraints ]
+      1    1    POSRES_FC    POSRES_FC    POSRES_FC
+      2    1    POSRES_FC    POSRES_FC    POSRES_FC
+      6    1    POSRES_FC    POSRES_FC    POSRES_FC
+      9    1    POSRES_FC    POSRES_FC    POSRES_FC
+     11    1    POSRES_FC    POSRES_FC    POSRES_FC
+     13    1    POSRES_FC    POSRES_FC    POSRES_FC
+     15    1    POSRES_FC    POSRES_FC    POSRES_FC
+     17    1    POSRES_FC    POSRES_FC    POSRES_FC
+     19    1    POSRES_FC    POSRES_FC    POSRES_FC
+     23    1    POSRES_FC    POSRES_FC    POSRES_FC
+#endif

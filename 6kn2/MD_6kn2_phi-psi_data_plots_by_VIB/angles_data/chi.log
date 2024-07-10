@@ -1,0 +1,129 @@
+Title: CZON1107-WT (CONFORMER A) in water
+
+There are 10 residues with dihedrals
+There are 0 dihedrals
+Dihedral: 
+Number:   
+
+ *** J-Couplings from simulation (plus std. dev.) ***
+
+Residue    J_NHa1   SD J_NHa2   SD J_HaC'   SD J_NHCb   SDJ_Ci-1Hai   SD  J_HaN   SD JHaHb2   SD JHaHb3   SD
+------------------------------------------------------------------------------------------------------------
+GLY1         4.92 3.21   5.13 3.31   1.89 1.93   2.36 2.53   1.11 1.24  -0.35 0.22   0.00 0.00   0.00 0.00
+PHE2         6.58 2.23   4.61 1.86   1.19 0.83   1.82 1.27   0.67 1.38  -0.71 0.44   0.00 0.00   0.00 0.00
+ARG3         8.06 1.94   3.64 1.72   0.87 0.78   1.17 1.22   1.66 1.32  -0.52 0.27   0.00 0.00   0.00 0.00
+SER4         7.07 2.28   4.32 1.96   1.07 0.82   1.61 1.35   0.69 1.08  -0.47 0.06   0.00 0.00   0.00 0.00
+PRO5         4.14 1.62   6.06 0.40   1.81 0.91   2.79 0.28  -0.64 0.65  -0.44 0.26   0.00 0.00   0.00 0.00
+CYS6         9.33 0.94   2.17 0.71   0.99 0.64   0.13 0.48   1.73 0.47  -0.52 0.03   0.00 0.00   0.00 0.00
+PRO7         3.12 1.02   6.04 0.31   2.45 0.77   2.78 0.22  -1.01 0.32  -0.41 0.07   0.00 0.00   0.00 0.00
+PRO8         7.08 1.50   5.27 1.06   0.48 0.32   2.24 0.74   0.61 0.73  -1.58 0.20   0.00 0.00   0.00 0.00
+PHE9         9.35 0.79   2.49 0.90   0.78 0.65   0.34 0.60   1.73 0.40  -0.49 0.08   0.00 0.00   0.00 0.00
+CYS10        8.09 1.27   4.22 1.25   0.50 0.79   1.54 0.84   1.10 0.62  -1.05 0.58   0.00 0.00   0.00 0.00
+
+Dihedrals with S2 > 0.8
+Dihedral: 
+Number:   
+
+ *** Chemical shifts from the chemical shift index ***
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+D. S. Wishart and A. M. Nip
+Protein Chemical Shift Analysis: A Practical Guide
+Biochem. Cell Biol. 76 (1998) pp. 153-163
+-------- -------- --- Thank You --- -------- --------
+
+     Residue    delta Ca    delta Ha    delta CO    delta Cb
+        GLY1    0.952444   -0.258391   0.0108823   -0.241745
+        PHE2   -0.352185   0.0518783   -0.709732     0.42632
+        ARG3   -0.393699   0.0589434     -0.7634    0.342134
+        SER4  -0.0907257   0.0150522   -0.428794    0.229324
+        PRO5    -0.50352   0.0981379    -1.02347    0.658641
+        CYS6   0.0729584  -0.0297014  -0.0309137  -0.0260888
+        PRO7   -0.389353   0.0745086   -0.871848    0.610996
+        PRO8    -1.26069     0.15507    -1.47668    0.940821
+        PHE9   -0.207917   0.0376335   -0.273732   0.0878512
+       CYS10   -0.471234  -0.0586749    -1.15767   0.0704643
+
+Residue GLY1
+ Angle [   AI,   AJ,   AK,   AL]  #tr/ns  S^2D  
+--------------------------------------------
+
+Residue PHE2
+ Angle [   AI,   AJ,   AK,   AL]  #tr/ns  S^2D  
+--------------------------------------------
+
+Residue ARG3
+ Angle [   AI,   AJ,   AK,   AL]  #tr/ns  S^2D  
+--------------------------------------------
+
+Residue SER4
+ Angle [   AI,   AJ,   AK,   AL]  #tr/ns  S^2D  
+--------------------------------------------
+
+Residue PRO5
+ Angle [   AI,   AJ,   AK,   AL]  #tr/ns  S^2D  
+--------------------------------------------
+
+Residue CYS6
+ Angle [   AI,   AJ,   AK,   AL]  #tr/ns  S^2D  
+--------------------------------------------
+
+Residue PRO7
+ Angle [   AI,   AJ,   AK,   AL]  #tr/ns  S^2D  
+--------------------------------------------
+
+Residue PRO8
+ Angle [   AI,   AJ,   AK,   AL]  #tr/ns  S^2D  
+--------------------------------------------
+
+Residue PHE9
+ Angle [   AI,   AJ,   AK,   AL]  #tr/ns  S^2D  
+--------------------------------------------
+
+Residue CYS10
+ Angle [   AI,   AJ,   AK,   AL]  #tr/ns  S^2D  
+--------------------------------------------
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Residue GLY1
+ Angle [   AI,   AJ,   AK,   AL]  rotamers  0  g(-)  t  g(+)
+--------------------------------------------
+
+Residue PHE2
+ Angle [   AI,   AJ,   AK,   AL]  rotamers  0  g(-)  t  g(+)
+--------------------------------------------
+
+Residue ARG3
+ Angle [   AI,   AJ,   AK,   AL]  rotamers  0  g(-)  t  g(+)
+--------------------------------------------
+
+Residue SER4
+ Angle [   AI,   AJ,   AK,   AL]  rotamers  0  g(-)  t  g(+)
+--------------------------------------------
+
+Residue PRO5
+ Angle [   AI,   AJ,   AK,   AL]  rotamers  0  g(-)  t  g(+)
+--------------------------------------------
+
+Residue CYS6
+ Angle [   AI,   AJ,   AK,   AL]  rotamers  0  g(-)  t  g(+)
+--------------------------------------------
+
+Residue PRO7
+ Angle [   AI,   AJ,   AK,   AL]  rotamers  0  g(-)  t  g(+)
+--------------------------------------------
+
+Residue PRO8
+ Angle [   AI,   AJ,   AK,   AL]  rotamers  0  g(-)  t  g(+)
+--------------------------------------------
+
+Residue PHE9
+ Angle [   AI,   AJ,   AK,   AL]  rotamers  0  g(-)  t  g(+)
+--------------------------------------------
+
+Residue CYS10
+ Angle [   AI,   AJ,   AK,   AL]  rotamers  0  g(-)  t  g(+)
+--------------------------------------------
+

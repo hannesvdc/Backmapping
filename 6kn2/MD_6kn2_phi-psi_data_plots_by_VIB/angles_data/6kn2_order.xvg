@@ -1,0 +1,39 @@
+# This file was created Thu Mar 18 17:04:21 2021
+# Created by:
+#                       :-) GROMACS - gmx chi, 2020.3 (-:
+# 
+# Executable:   /usr/local/gromacs/bin/gmx
+# Data prefix:  /usr/local/gromacs
+# Working dir:  /home/bio2byte/users/joel/gmx_sims/leuven_entries/charmm36m_ff/rama
+# Command line:
+#   gmx chi -s ../6kn2_clean_prod_100ns.tpr -f ../traj_comp.xtc -o 6kn2_order.xvg -g -rama -shift
+# gmx chi is part of G R O M A C S:
+#
+# Guyana Rwanda Oman Macau Angola Cameroon Senegal
+#
+@    title "Dihedral Order Parameters"
+@    xaxis  label "Residue"
+@    yaxis  label "S2"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "S2Min"
+@ s1 legend "S2Max"
+@ s2 legend "Phi"
+@ s3 legend "Psi"
+@ s4 legend "Omega"
+#Res.      S2Min      S2Max        Phi        Psi      Omega 
+    1      0.005      0.651      0.005      0.651      0.000 
+    2      0.275      0.980      0.549      0.275      0.980 
+    3      0.349      0.979      0.428      0.349      0.979 
+    4      0.661      0.976      0.661      0.953      0.976 
+    5      0.662      0.946      0.946      0.662      0.946 
+    6      0.938      0.981      0.938      0.979      0.981 
+    7      0.964      0.975      0.971      0.975      0.964 
+    8      0.943      0.966      0.943      0.945      0.966 
+    9      0.889      0.984      0.928      0.889      0.984 
+   10      0.004      0.978      0.839      0.004      0.978 

@@ -1,0 +1,14 @@
+#include "martini_v2.2.itp"
+
+
+
+#include "Protein_A.itp"
+
+[ system ]
+; name
+Martini system from 6kn2_clean.pdb
+
+[ molecules ]
+; name        number
+Protein_A 	 1
+;W           287

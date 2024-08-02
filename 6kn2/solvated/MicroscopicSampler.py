@@ -5,8 +5,8 @@ sys.path.append('../')
 
 import numpy as np
 import matplotlib.pyplot as plt
-import simtk.openmm.app as app
-import simtk.openmm as openmm
+import openmm.app as app
+import openmm as openmm
 import time
 
 from Util import *

@@ -50,7 +50,6 @@ class Ramachandran:
                 Nnext = x[:, total_len + 4, :] # This is the terminal N atom
             else:
                 Nnext = x[:, total_len + self.lens[self.amino_acids[i]] + 0, :]
-            print(Cprev.shape, N.shape, Ca.shape, C.shape, Nnext.shape)
 
             phi = __compute_torsions__(Cprev, N, Ca, C) # According to Wim, Ca must be the 'C' atom on the central bond
             psi = __compute_torsions__(Nnext, C, Ca, N) # So both looking directions are opposite

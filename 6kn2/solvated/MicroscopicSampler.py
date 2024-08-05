@@ -6,19 +6,19 @@ sys.path.append('../')
 import numpy as np
 import matplotlib.pyplot as plt
 import openmm.app as app
-import openmm as openmm
+import openmm
 import time
 
 from Util import *
 
 # Loading the macroscopic system
 def loadMicroscopicSystem():
-    includeDir =  '/Users/hannesvdc/Research/Projects/Backmapping for Proteins/6kn2/6kn2_input_files/charmm36m_ff/'
-    topfilename = '/Users/hannesvdc/Research/Projects/Backmapping for Proteins/6kn2/6kn2_input_files/charmm36m_ff/6kn2_topol_36m.top'
-    grofilename = '/Users/hannesvdc/Research/Projects/Backmapping for Proteins/6kn2/6kn2_input_files/charmm36m_ff/6kn2_clean_solvated_36m.gro'
+    includeDir =  '/Users/hannesvdc/OneDrive - Johns Hopkins/Research_Data/Backmapping for Proteins/6kn2/6kn2_input_files/charmm36m_ff/'
+    topfilename = '6kn2_topol_36m.top'
+    grofilename = '6kn2_clean_solvated_36m.gro'
 
-    grofile = app.GromacsGroFile(grofilename)
-    topfile = app.GromacsTopFile(topfilename, periodicBoxVectors=grofile.getPeriodicBoxVectors(), includeDir=includeDir)
+    grofile = app.GromacsGroFile(includeDir + grofilename)
+    topfile = app.GromacsTopFile(includeDir + topfilename, periodicBoxVectors=grofile.getPeriodicBoxVectors(), includeDir=includeDir)
     system = topfile.createSystem()
     context = openmm.Context(system, openmm.BrownianIntegrator(1.0, 1.0, 1.0), openmm.Platform.getPlatformByName("Reference"))
     context.setPositions(grofile.getPositions())
@@ -101,7 +101,7 @@ def findOptimalMicroscopicTimestep():
 
     for dt in dt_list:
         print('\n\n\ndt =', dt)
-        acc = runMicroscopicSampler(dt=dt)
+        acc, _ = runMicroscopicSampler(dt=dt, N=1000)
         acc_list.append(acc)
 
     print('Plotting')
@@ -111,10 +111,11 @@ def findOptimalMicroscopicTimestep():
     plt.show()
 
 if __name__ == '__main__':
-    dt = 1.e-3
-    N  = 10000
+    #findOptimalMicroscopicTimestep()
+    dt = 2.e-5
+    N  = 100000
     samples, _ = runMicroscopicSampler(dt, N)
 
-    filename = 'microscopicHMC_N=10000_dt=1e_3_.npy'
-    directory = '/Users/hannesvdc/Research_Data/Backmapping for Proteins/6kn2/solvated/'
+    filename = 'microscopicHMC_N=100000_dt=2e_5_.npy'
+    directory = '/Users/hannesvdc/OneDrive - Johns Hopkins/Research_Data/Backmapping for Proteins/6kn2/solvated/'
     np.save(directory + filename, samples)

@@ -44,7 +44,6 @@ class Ramachandran:
                 Cprev = x[:, 4, :] # This is the C in the CH3 initial group
             else:
                 Cprev = x[:, total_len - self.lens[self.amino_acids[i-1]] + 2, :] # C atom from the previous amino-acid
-                print(Cprev.shape)
 
             if i == len(self.amino_acids)-1:
                 Nnext = x[:, total_len + 4, :] # This is the terminal N atom
